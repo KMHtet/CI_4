@@ -7,9 +7,14 @@
 
 <h1>Articles</h1>
 
+<a href="<?= url_to("Articles::new") ?>"></a>
+
 <?php foreach ($articles as $article) : ?>
     <article>
-        <h2><?= $article["title"] ?></h2>
+        <!-- normal url -->
+        <!-- <h2> <a href="/articles/<?= $article["id"] ?>"><?= $article["title"] ?></a></h2>  -->
+        <!-- with site url -->
+        <h2> <a href="<?= site_url('./articles/' . $article["id"]) ?>"><?= $article["title"] ?></a></h2>
         <p><?= $article["content"] ?></p>
     </article>
 <?php endforeach ?>

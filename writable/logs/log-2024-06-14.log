@@ -1,0 +1,161 @@
+CRITICAL - 2024-06-14 14:56:31 --> ArgumentCountError: Too few arguments to function App\Controllers\Articles::show(), 0 passed in /Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: articles/1]
+in APPPATH/Controllers/Articles.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->show()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:12:12 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: " . $article["id"]"
+[Method: GET, Route: articles/%20.%20$article%5B%22id%22%5D]
+in SYSTEMPATH/Router/Router.php on line 736.
+ 1 SYSTEMPATH/Router/Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('articles/ . $article["id"]')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('articles/ . $article["id"]')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:15:27 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:15:27 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/1]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:15:28 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:16:55 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:16:56 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:17:28 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:17:29 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:18:39 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:18:43 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+CRITICAL - 2024-06-14 15:18:46 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: articles]
+in SYSTEMPATH/Router/RouteCollection.php on line 1592.
+ 1 SYSTEMPATH/Router/RouteCollection.php(1456): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('articles/new', [...])
+ 2 SYSTEMPATH/Router/RouteCollection.php(1053): CodeIgniter\Router\RouteCollection->create('GET', 'articles/new', [...], null)
+ 3 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->get('articles/new', [...])
+ 4 SYSTEMPATH/Router/RouteCollection.php(340): require('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Config/Routes.php')
+ 5 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')

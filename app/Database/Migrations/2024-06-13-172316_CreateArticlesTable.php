@@ -25,18 +25,6 @@ class CreateArticlesTable extends Migration
                 'type' => 'TEXT',
                 'null' => true
             ],
-            'created_at' => [
-                'type' => 'TIMESTAMP',
-                'null' => true,
-            ],
-            'updated_at' => [
-                'type' => 'TIMESTAMP',
-                'null' => true,
-            ],
-            'deleted_at' => [
-                'type' => 'TIMESTAMP',
-                'null' => true,
-            ],
         ]);
 
         $this->forge->addPrimaryKey('id');
