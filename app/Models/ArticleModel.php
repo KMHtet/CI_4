@@ -8,6 +8,8 @@ class ArticleModel extends Model
     protected $table="article";
     protected $allowedFields = ["title", "content"];
 
+    protected $returnType = \App\Entities\Article::class;
+
     protected $validationRules = [
         "title" => "required|max_length[128]",
         "content" => "required"

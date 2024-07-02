@@ -3,11 +3,19 @@
 namespace App\Controllers;
 
 use App\Models\ArticleModel;
+use App\Entities\Article;
 use CodeIgniter\Controller;
 use CodeIgniter\Database\Exceptions\DatabaseException;
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Articles extends BaseController
 {
+    private ArticleModel $model;
+
+    public function __construct()
+    {
+        $this->model = new ArticleModel();
+    }
     public function index()
     {
         // $db = \Config\Database::connect();
@@ -26,18 +34,16 @@ class Articles extends BaseController
         //         ["title" => "Three", "content" => "the Third"],
         //     ];
 
-        $model = new ArticleModel();
-        $data = $model->findAll();
+        $this->model = new ArticleModel();
+        $data = $this->model->findAll();
 
         return view("Articles/index", ["articles" => $data]);
     }
 
     public function show($id)
     {
-        // dd($id);
-        $model = new ArticleModel();
-        $article = $model->find($id);
-        // dd($article);
+        $article = $this->getArticleOr404($id);
+
         return view("Articles/show", [
             "article" => $article
         ]);
@@ -46,19 +52,18 @@ class Articles extends BaseController
     public function new()
     {
         return view("Articles/new", [
-            "article" => [
-                "title" => "",
-                "content" => ""
-            ]
+            "article" =>  new Article()
         ]);
     }
 
     public function create()
     {
-        $model = new ArticleModel();
-        $id =  $model->insert($this->request->getPost());
+        $article = new Article($this->request->getPost());
+
+        $id =  $this->model->insert($article);
+
         if ($id === false) {
-            return redirect()->back()->with("errors", $model->errors())->withInput();
+            return redirect()->back()->with("errors", $this->model->errors())->withInput();
         }
 
         return redirect()->to("articles/$id")->with("message", "Article saved");
@@ -66,8 +71,7 @@ class Articles extends BaseController
 
     public function edit($id) //show
     {
-         $model = new ArticleModel();
-         $article = $model->find($id);
+         $article = $this->getArticleOr404($id);
          return view("Articles/edit", [
              "article" => $article
          ]);
@@ -75,12 +79,46 @@ class Articles extends BaseController
 
     public function update($id)
     {
-        $model = new ArticleModel();
-        if($model->update($id, $this->request->getPost())) {
+        $article = $this->getArticleOr404($id);
+
+        $article ->fill($this->request->getPost());
+
+        if(! $article->hasChanged()) {
+            return redirect()->back()->with("message", "Nothing update!");
+        }
+
+        if($this->model->save($article)) {
             return redirect()->to("articles/$id")
             ->with("message","Article updated.");
         }
-        return redirect()->back()->with("errors", $model->errors())->withInput();
+        return redirect()->back()->with("errors", $this->model->errors())->withInput();
+    }
+
+    public function delete($id)
+    {
+        $article = $this->getArticleOr404($id);
+
+        if($this->request->is("post")) {
+
+            $this->model->delete($id);
+
+            return redirect()->to("articles")->with("message", "Article deleted.");
+        }
+
+        return view("Articles/delete", [
+            "article"=> $article
+        ]);
+    }
+
+    private function getArticleOr404($id): Article
+    {
+        $article = $this->model->find($id);
+
+        if($article === null)
+        {
+            throw new PageNotFoundException("Article with id $id not found!");
+        }
+        return $article;
     }
 }
 
