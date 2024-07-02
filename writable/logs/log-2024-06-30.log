@@ -1,0 +1,211 @@
+INFO - 2024-06-30 14:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 14:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:07:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new')
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:09:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:09:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:09:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:09:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:09:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:10:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:10:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:10:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-30 15:10:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Articles/from.php"
+[Method: GET, Route: articles/new]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Articles/from.php')
+ 2 SYSTEMPATH/View/View.php(484): CodeIgniter\View\View->render('Articles/from', null, true)
+ 3 APPPATH/Views/Articles/new.php(19): CodeIgniter\View\View->include('Articles/from')
+ 4 SYSTEMPATH/View/View.php(234): include('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/app/Views/Articles/new.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('Articles/new', [], true)
+ 7 APPPATH/Controllers/Articles.php(48): view('Articles/new', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Articles->new()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articles))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Users/kyawmyohtet/Documents/WorkSpace/DL_Ideas/PHP/Testing/codeigniter4/public/index.php')
+INFO - 2024-06-30 15:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-30 15:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

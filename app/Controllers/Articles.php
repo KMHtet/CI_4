@@ -38,23 +38,49 @@ class Articles extends BaseController
         $model = new ArticleModel();
         $article = $model->find($id);
         // dd($article);
-        return view("Articles/show",[
+        return view("Articles/show", [
             "article" => $article
         ]);
     }
 
     public function new()
     {
-        return view("Articles/new");
+        return view("Articles/new", [
+            "article" => [
+                "title" => "",
+                "content" => ""
+            ]
+        ]);
     }
 
     public function create()
     {
-        $modle = new ArticleModel();
-        $id =  $modle->insert($this->request->getPost());
-        if($id === false) {
-            dd($modle->errors());
+        $model = new ArticleModel();
+        $id =  $model->insert($this->request->getPost());
+        if ($id === false) {
+            return redirect()->back()->with("errors", $model->errors())->withInput();
         }
-        dd($id);
+
+        return redirect()->to("articles/$id")->with("message", "Article saved");
+    }
+
+    public function edit($id) //show
+    {
+         $model = new ArticleModel();
+         $article = $model->find($id);
+         return view("Articles/edit", [
+             "article" => $article
+         ]);
+    }
+
+    public function update($id)
+    {
+        $model = new ArticleModel();
+        if($model->update($id, $this->request->getPost())) {
+            return redirect()->to("articles/$id")
+            ->with("message","Article updated.");
+        }
+        return redirect()->back()->with("errors", $model->errors())->withInput();
     }
 }
+
